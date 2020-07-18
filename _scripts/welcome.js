@@ -1,7 +1,25 @@
 var tabLinks;
+var header;
+var sticky; 
+
 
 window.onload = function() {
+    header = document.getElementById("mainContainer");
+    tabsTable = document.getElementById("tabsTable");
+    sticky = header.offsetTop + 45;
     
+    appLinks = document.getElementById("tabsFlexHeaderOnTop").getElementsByTagName("div");
+    for (var i = 0; i < appLinks.length; i++) {
+        appLinks[i].onclick = function() { 
+			selectApp(this); 
+			return false;
+		}
+        appLinks[i].onfocus = function() { 
+			selectApp(this); 
+			return false;
+		}
+    }
+
     tabLinks = document.getElementById("tabsFlexHeader").getElementsByTagName("div");
     for (var i = 0; i < tabLinks.length; i++) {
         tabLinks[i].onclick = function() { 
@@ -26,6 +44,38 @@ window.onload = function() {
 		}
     }
 
+}
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    tabsTable.classList.add("sticky");
+  } else {
+    tabsTable.classList.remove("sticky");
+  }
+}
+
+function selectApp(appToActivate) {
+    if (appToActivate.classList.contains("selectedApp")) {
+        return;
+    }
+    for (var i = 0; i < appLinks.length; i++) {
+        if ("app".concat(i.toString()) == appToActivate.id) {
+            appLinks[i].classList.add("selectedApp");
+            appLinks[i].classList.remove("unSelectedApp");
+            document.getElementById("appRow".concat(i.toString())).classList.add("selectedAppContainer");
+            document.getElementById("appRow".concat(i.toString())).classList.remove("unSelectedAppContainer");
+
+        } else {
+            appLinks[i].classList.add("unSelectedApp");
+            appLinks[i].classList.remove("selectedApp");
+           
+            document.getElementById("appRow".concat(i.toString())).classList.remove("selectedAppContainer");
+            document.getElementById("appRow".concat(i.toString())).classList.add("unSelectedAppContainer");
+
+        }
+	}
 }
 
 function playVideo(tabToActivate) {
