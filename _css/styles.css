@@ -34,7 +34,7 @@ header {
     margin: 0;
     width: 100%;
     height: 70px;
-    background-color: #074073;
+        background-color: #074073;
 /*        border-style: solid;*/
 /*    border-color: #F23E16;*/
 /*    border-width: 2px;*/
@@ -53,8 +53,9 @@ header {
     margin-top: 20px;
     width: 100%;
     height: 50px;
-    background-color: #F2994B;
-    color: #074073;
+    background-color: #074073;
+/*    color: #074073;*/
+    color: white;
             bottom: 0;
       position: fixed;
 /*        border-style: solid;*/
@@ -72,6 +73,10 @@ header {
     margin-right: 20px;
 }
 
+.applicubeFooter a {
+      text-decoration: none;
+}
+
 .applicubeHeader p {
     font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
     font-size: 40px;
@@ -80,6 +85,10 @@ header {
     margin-left: 20px;
     line-height: 50px;
     text-align: left;
+}
+
+.applicubeHeader a {
+      text-decoration: none;
 }
 
 .applicubeHeader img {
@@ -126,12 +135,28 @@ appSection {
 */
 }
 
+.applicubeBackgroundBlue {
+    background-color: #074073;
+}
+
+.applicubeBlue {
+    color: #074073;
+}
+
 .applicubeWhite {
     color: white;
 }
 
 .applicubeRed {
     color: #F23E16;
+}
+
+.memobrixOrange {
+    color: #F2994B;
+}
+
+.numzYellow {
+    color: #F2E205;
 }
 
 
@@ -169,34 +194,39 @@ appSection {
 }
 
 h1 {
-    font-family: Futura, -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
     width: 80%;
     margin: 0px auto;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
-    font-weight: 900;
-    padding: 10px;
-    color: beige;
-    opacity: 80%;
+    font-weight: 400;
+    padding: 5px;
+    color: #074073;
 }
+
 .header1 {
-        background-color: darkkhaki;
+/*    background-color: #074073;*/
 }
+
 h2 {
-    font-family: Futura, -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
     width: 80%;
     margin: 0px auto;
     font-size: 1.4em;
     text-align: center;
-    font-weight: 900;
-    padding: 10px;
-    color: darkkhaki;
+    font-weight: 100;
+    padding: 5px;
+    color: #074073;
     text-transform: uppercase;
+
 }
 .header2 {
-    background-color: beige;
+/*
+    background-color: #023859;
+    opacity: 80%;
+*/
 }
-.videoRef {
+#videoRef {
     width: 80%;
     display: none;
     margin: 0 auto;
@@ -239,12 +269,12 @@ hr {
 .videoContainer {
     width: 30%;
     text-align: right;
-    background-color: beige;
-    background: linear-gradient(180deg, rgba(245,245,220,1) 0%, rgba(189,183,107,1) 100%);
+    background-color: white;
+/*    background: linear-gradient(180deg, rgba(7,64,115,1) 0%, rgba(242,153,75,1) 100%);*/
 }
 
 .sticky {
-    padding-top: 45px;
+    padding-top: 70px;
 }
 
 
@@ -269,7 +299,7 @@ hr {
 
 }
 .tabsFlexHeader  p {
-    font-family: Futura, -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
     line-height: 40px;
     margin: 0 0px;
 /*    border-radius: 8px;*/
@@ -278,12 +308,12 @@ hr {
     color: black;
 }
 .selectedVideo > p {
-    background-color: #225f86;
-    opacity: 40%;
+    background-color: #074073;
+    opacity: 100%;
     color: white;
 }
 .unSelectedVideo > p {
-    color: #225f86;
+    color: #074073;
 }
 .selectedApp > p {
     background-color: #225f86;
@@ -356,22 +386,22 @@ hr {
    box-shadow:          -3px 3px 6px gray;
 }
 .detailParagraph {
-    font-family: Futura, -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
     text-align: left;
     padding: 4px 4px;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.4em;
     opacity: 60%;
     margin: 0;
     height: 100%;
 }
 .detailParagraphLeft {
-    color: black;
+    color: #074073;
 
 }
 .detailParagraphRight {
 /*    color: #225f86;*/
-    color: black;
+    color: #074073;
 
 }
 .footerTable {
@@ -385,7 +415,7 @@ hr {
 .contact {
     font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
     font-weight: 300;
-    color: darkslategray;
+    color: white;
     line-height: 1.4em;
     font-size: 1.3em;
     width: 50%;
@@ -402,7 +432,7 @@ ______________________________________*/
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 30; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -418,7 +448,7 @@ ______________________________________*/
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 /* Caption of Modal Image */
@@ -426,14 +456,13 @@ ______________________________________*/
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 500px;
   text-align: center;
-  color: darkslategray;
-    background-color: darkkhaki;
+  color: white;
+    background-color: #074073;
   padding: 10px 0;
-  height: 80px;
-  font-size: 3em;
-    text-transform: uppercase;
+  height: 50px;
+  font-size: 1.5em;
 }
 
 /* Add Animation */
@@ -474,15 +503,98 @@ ______________________________________*/
 
 
 @media only screen and (max-width: 992px) {
+    
+    .applicubeHeader {
+    margin: 0;
+    width: 100%;
+    height: 150px;
+        background-color: #074073;
+        top: 0;
+      position: fixed;
+        z-index: 20;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.applicubeFooter {
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+    background-color: #074073;
+/*    color: #074073;*/
+    color: white;
+            bottom: 0;
+      position: fixed;
+/*        border-style: solid;*/
+/*    border-color: #F23E16;*/
+/*    border-width: 2px;*/
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2em;
+
+}
+
+.applicubeFooter span {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.applicubeFooter a {
+      text-decoration: none;
+}
+
+.applicubeHeader p {
+    font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+    font-size: 5em;
+    font-weight: 100;
+    margin: 0;
+    margin-left: 40px;
+    line-height: 70px;
+    text-align: left;
+}
+
+.applicubeHeader a {
+      text-decoration: none;
+}
+
+.applicubeHeader img {
+    width: 90px;
+    height: 90px;
+    margin-right: 40px;
+}
+    
+    .headerSpacer {
+    margin: 0;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+}
+
+.footerSpacer {
+    margin: 0;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+}
+
+
     h1 {
-        font-size: 3.5em;
+        font-size: 5em;
+        font-weight: 600;
         opacity: 100%;
     }
     h2 {
         font-size: 2em;
+        font-weight: 400;
         opacity: 100%;
     }
-    .videoRef {
+    #videoRef {
         width: 80%;
         display: block;
         margin: 10px auto;
@@ -490,7 +602,7 @@ ______________________________________*/
         text-align: center;
     /*    padding: 4px 4px;*/
         font-weight: 300;
-        font-size: 1.1em;
+        font-size: 2em;
         opacity: 60%;
         color: darkkhaki;
     }
@@ -507,6 +619,7 @@ ______________________________________*/
     .videoContainer {
         width: 100%;
     }
+    
 .sticky {
     padding-top: 0px;
 }
@@ -525,11 +638,11 @@ ______________________________________*/
         margin: 0px 0px 0px 20px;
     }
     .detailParagraph {
-        font-family: Futura, -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
         text-align: left;
         padding: 4px 4px;
-        font-weight: 100;
-        font-size: 3em;
+        font-weight: 300;
+        font-size: 4em;
         opacity: 50%;
         margin: 0;
         height: 100%;
@@ -555,21 +668,22 @@ ______________________________________*/
         font-weight: 400;
         font-size: 2em;
     }
+    
     .selectedVideo > p {
-        background-color: darkkhaki;
+        background-color: #074073;
         opacity: 80%;
-        color: beige;
+        color: white;
     }
     .unSelectedVideo > p {
-        color: darkkhaki;
+        color: #074073;
     }
     .selectedApp > p {
         background-color: darkkhaki;
         opacity: 80%;
-        color: beige;
+        color: white;
     }
     .unSelectedApp > p {
-        color: darkkhaki;
+        color: #225f86;
     }
     .memobrixAR {
         width: 100%;
