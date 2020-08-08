@@ -3,8 +3,8 @@
 }
 
 html, body {
-	background: white; /* Beccapurple */
-	margin: 0;
+    background: white; /* Beccapurple */
+    margin: 0;
 /*
    -moz-box-shadow:    inset 0 0 20px darkkhaki;
    -webkit-box-shadow: inset 0 0 20px darkkhaki;
@@ -19,8 +19,8 @@ body {
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-    margin-top: 0
-    margin-left: 0
+    margin-top: 0;
+    margin-left: 0;
 	background: white;
 
 }
@@ -28,6 +28,16 @@ body {
 header {
     margin: 0px;
     text-align: center;
+}
+
+.dailyHeader {
+    margin: 0;
+    background-color: #074073;
+    color: #F2E205;
+}
+
+.dailyHeader a {
+    text-decoration: none;
 }
 
 .applicubeHeader {
@@ -220,6 +230,17 @@ h2 {
     text-transform: uppercase;
 
 }
+
+h3 {
+    font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+    width: 80%;
+    margin: 0px auto;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 100;
+    padding: 5px;
+}
+
 .header2 {
 /*
     background-color: #023859;
@@ -375,6 +396,7 @@ hr {
 .flexImage:hover {
     opacity: 70%;
 }
+
 .rightShadow {
    -moz-box-shadow:     3px 3px 6px gray;
    -webkit-box-shadow:  3px 3px 6px gray;
@@ -501,6 +523,346 @@ ______________________________________*/
   cursor: pointer;
 }
 
+/* THE DAILY CHALLENGE 
+______________________________________*/
+#resultHeader {
+    margin: auto;
+    margin-top: 40px;
+    font-size: 4em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    width: 160px;
+    background-color: #074073;
+    color: white;
+    border-color: #F23E16;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    position: sticky;
+}
+
+#hiddenGoal {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    display: none;
+    text-align: center;
+    width: 120px;
+    background-color: #074073;
+    color: white;
+    border-color: #F23E16;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.stickyResultHeader {
+    padding-top: 170px;
+}
+.challengeBkg {
+    margin-top: 20px;
+    width:100%;
+    background-color: #0066A6;
+}
+
+#numzChallengeHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.numLogoChallengeHeader {
+    width: 80px;
+    border-radius: 10px;
+    margin-left: 80px;
+    border-width: 2px;
+    border-color: #F2E205;
+    border-style: solid;
+}
+
+.appleAppStore {
+    width: 160px;
+}
+
+.challengeH1 p {
+    font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+    font-size: 2.8em;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px;
+    color: white;
+}
+
+
+#numContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.numButton {
+    font-size: 3em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    width: 120px;
+    background-color: #074073;
+    color: white;
+    border-color: #F2E205;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.numButton:hover {
+    color: gray;
+}
+
+.buttonsContainer {
+    margin-bottom: 40px;
+}
+
+#opersContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.operButton {
+    font-size: 3em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    width: 60px;
+    background-color: #074073;
+    color: white;
+    border-color: #F2E205;
+    border-color: green;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.operButton:hover {
+    color: gray;
+}
+
+#undoContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.undoButton {
+    font-size: 2.5em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    width: 60px;
+    background-color: #074073;
+    color: white;
+    border-color: #F2E205;
+
+    border-color: green;
+
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.undoButton:hover {
+    color: gray;
+}
+
+.reloadButton {
+    font-size: 2.5em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    width: 60px;
+    background-color: #074073;
+    color: white;
+    border-color: #F2E205;
+
+    border-color: green;
+
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.reloadButton:hover {
+    color: gray;
+}
+
+#exerciseContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: stretch;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+exercise {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: stretch;
+    width: 100%;
+    background-color: black;
+    margin: 10px;
+    border-color: #F2994B;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.flexExercise {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    width: 70%;
+    background-color: #074073;
+    color: white;
+    border-color: #F2E205;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 2;
+    justify-content: center;
+
+}
+
+.flexExercise div {
+        width: 120px;
+
+}
+
+.modalGreatJob {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 30; /* Sit on top */
+/*    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(245,245,220); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    align-items: center;
+    align-content: center;
+}
+
+#gjContainer {
+    margin: auto;
+/*    display: flex; */
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    border-color: #F2994B;
+    border-width: 5px;
+    border-style: solid;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.gjPara {
+    width: 100%;
+    height: 15%;
+    align-content: center;
+}
+
+.gjPara p {
+    color: #F2994B;
+    font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    margin: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+.gjImg {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.dismissButton {
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+    background-color: #F2994B;
+    border-radius: 10px;    
+    overflow: hidden;
+    display: flex;
+}
+
+.dismissButton p {
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-content: center;
+    color: black;
+    display: block;
+}
+
+/*
+.hidden {
+    display: none;
+}
+*/
 
 @media only screen and (max-width: 992px) {
     
@@ -698,4 +1060,348 @@ ______________________________________*/
         width: 100%;
     }
 
+/* THE DAILY CHALLENGE 
+______________________________________*/
+#resultHeader {
+    margin: auto;
+    margin-top: 40px;
+    font-size: 7em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    width: 250px;
+    background-color: #074073;
+    color: white;
+    border-color: #F23E16;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    position: sticky;
 }
+
+#hiddenGoal {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 4em;
+    font-weight: bold;
+    display: none;
+    text-align: center;
+    width: 170px;
+    background-color: #074073;
+    color: white;
+    border-color: #F23E16;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.stickyResultHeader {
+    padding-top: 170px;
+}
+.challengeBkg {
+    margin-top: 20px;
+    width:100%;
+    background-color: #0066A6;
+}
+
+#numzChallengeHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.numLogoChallengeHeader {
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 60px;
+    border-width: 2px;
+    border-color: #F2E205;
+    border-style: solid;
+}
+
+.appleAppStore {
+    width: 160px;
+}
+
+.challengeH1 p {
+    font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+    font-size: 3.2em;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px;
+    color: white;
+}
+
+
+#numContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.numButton {
+    font-size: 6.5em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    width: 210px;
+    background-color: #074073;
+    color: white;
+    border-color: #F2E205;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.numButton:hover {
+    color: gray;
+}
+
+.buttonsContainer {
+    margin-bottom: 40px;
+}
+
+#opersContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.operButton {
+    font-size: 5em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    background-color: #074073;
+    color: white;
+    border-color: #F2E205;
+    border-color: green;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.operButton:hover {
+    color: gray;
+}
+
+#undoContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.undoButton {
+    font-size: 5em;
+    font-weight: 900;
+    display: block;
+    text-align: center;
+    background-color: #074073;
+    color: white;
+    border-color: #F2E205;
+    border-color: green;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.undoButton:hover {
+    color: gray;
+}
+
+.reloadButton {
+    font-size: 5em;
+    font-weight: 900;
+    display: block;
+    text-align: center;
+    background-color: #074073;
+    color: white;
+    border-color: #F2E205;
+
+    border-color: green;
+
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.reloadButton:hover {
+    color: gray;
+}
+
+#exerciseContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: stretch;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+exercise {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: stretch;
+    width: 100%;
+    background-color: black;
+    margin: 10px;
+    border-color: #F2994B;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+exercise > .numButton {
+    font-size: 4em;
+    max-width: 150px;
+}
+
+exercise > .operButton {
+    font-size: 4em;
+    max-width: 60;
+}
+
+.flexExercise {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    width: 70%;
+    background-color: #074073;
+    color: white;
+    border-color: #F2E205;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 2;
+    justify-content: center;
+
+}
+
+.flexExercise div {
+        width: 120px;
+
+}
+
+.modalGreatJob {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 30; /* Sit on top */
+/*    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(245,245,220); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    align-items: center;
+    align-content: center;
+}
+
+#gjContainer {
+    margin: auto;
+/*    display: flex; */
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    border-color: #F2994B;
+    border-width: 5px;
+    border-style: solid;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.gjPara {
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    display: flex;
+}
+
+.gjPara p {
+    color: #F2994B;
+    font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    display: block;
+}
+
+.gjImg {
+    height: 60%;
+    margin: auto;
+    display: block;
+}
+
+.dismissButton {
+    width: 80%;
+    height: 20%;
+    align-items: center;
+    background-color: #F2994B;
+    border-radius: 10px;   
+    margin: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.dismissButton p {
+    font-family: -apple-system, BlinkMacSystemFont, Verdana, sans-serif;
+    font-size: 3em;
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    padding: 0;
+    display: block;
+}
+
+
+}
+
+
+
